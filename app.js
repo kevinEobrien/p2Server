@@ -1,3 +1,4 @@
+
 const express = require("express");
 const cors = require("cors");
 const app = express();
@@ -17,6 +18,10 @@ app.post("/suggestions", function(request, response) {
   response.json({ "Your suggestions is greatly appreciated.": request.body });
 });
 
-app.get("/sugggestions", (req, res) => res.json(suggestions));
+app.get("/suggestions", (req, res) => res.json(suggestions));
 
 app.listen(process.env.PORT || 3000);
+
+// module.exports {
+
+// }
