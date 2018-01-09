@@ -1,12 +1,12 @@
 module.exports = {
   data: [{
-          "id": 1,
-          "type": "other resource",
-          "description": "This site includes a series of printable comic templates",
-          "link": "http://donnayoung.org/art/comics.htm"
-      },
-      {
-          "id": 2,
+    "id": 1,
+    "type": "other resource",
+    "description": "This site includes a series of printable comic templates",
+    "link": "http://donnayoung.org/art/comics.htm"
+  },
+  {
+    "id": 2,
           "type": "video",
           "description": "How to draw a simple dog for kids",
           "link": "https://www.youtube.com/watch?v=b9lmEcm36rM"
