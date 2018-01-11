@@ -1,6 +1,3 @@
-// import { log } from "util";
-
-
 const express = require("express");
 const cors = require("cors");
 const app = express();
@@ -16,9 +13,9 @@ let suggestions = [];
 
 
 app.post("/suggestions", function(request, response) {
-  suggestions.push(response.body);
-  console.log(response.body);
-  response.json({ "Your suggestions is greatly appreciated.": request.body });
+  console.log(response.body)
+  suggestions.push(request.body);
+  response.json({ "Your suggestion is greatly appreciated.": request.body });
 });
 
 app.get("/suggestions", (req, res) => res.json(suggestions));
