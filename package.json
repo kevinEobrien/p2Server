@@ -4,7 +4,7 @@
   "description": "p2Project",
   "main": "app.js",
   "scripts": {
-    "test": "test",
+    "test": "mocha",
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
@@ -16,6 +16,17 @@
     "express": "^4.16.2"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.1.0",
     "nodemon": "^1.14.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinEobrien/p2Server.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/kevinEobrien/p2Server/issues"
+  },
+  "homepage": "https://github.com/kevinEobrien/p2Server#readme"
 }
