@@ -15,11 +15,16 @@ let suggestions = [];
 
 function mergedData(data, otherData) {
   let mergedData = [];
-  data.forEach(function (resource){
-    for(var i=0, length= otherData.length; i<length; i++){
-      if(resource.id===otherData[i].id){
-        var completeResource= {"id": resource.id, "type": resource.type, "description":resource.description, "link":otherData[i].link}
-        mergedData.push(completeResource); 
+  data.forEach(function(resource) {
+    for (var i = 0, length = otherData.length; i < length; i++) {
+      if (resource.id === otherData[i].id) {
+        var completeResource = {
+          id: resource.id,
+          type: resource.type,
+          description: resource.description,
+          link: otherData[i].link
+        };
+        mergedData.push(completeResource);
       }
     }
   });
